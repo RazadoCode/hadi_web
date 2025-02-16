@@ -2,7 +2,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "../_components/Navbar";
 
-
 const interSans = Inter({
   variable: "--font-inter-sans",
   subsets: ["latin"],
@@ -21,10 +20,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${interSans.variable} antialiased`}
-      >
-      <Navbar/>
+      <body className={`${interSans.variable} antialiased`}>
+        <Navbar />
         {children}
       </body>
     </html>
