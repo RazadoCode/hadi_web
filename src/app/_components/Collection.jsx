@@ -16,8 +16,8 @@ const Collection = () => {
   ];
 
   return (
-    <div className="w-full sm:px-[32px] px-[16px]  ">
-      <div className="text-[15px] sm:text-[20px] font-[700] pt-[20px] pb-[20px] ">
+    <div className="w-full   ">
+      <div className="text-[15px] sm:px-[32px] px-[16px] sm:text-[20px] font-[700] pt-[20px] pb-[20px] ">
         <h1>Collections</h1>
       </div>
 
@@ -36,11 +36,11 @@ const Collection = () => {
         <Carousel className="overflow-hidden">
           <CarouselContent>
             {CollectionImages.map((item, i) => (
-              <CarouselItem key={i} className="basis-[55%]">
-                <img src={item.src} alt={item.alt} />
-                <p className="flex items-center justify-center text-center pt-[6px] font-[700]">
-                  {item.name}
-                </p>
+              <CarouselItem key={i} className="basis-[50%]">
+                <div className="flex-col flex justify-center text-center">
+                  <img src={item.src} alt={item.alt} />
+                  <p className="font-[700] pt-[6px]">{item.name}</p>
+                </div>
               </CarouselItem>
             ))}
           </CarouselContent>

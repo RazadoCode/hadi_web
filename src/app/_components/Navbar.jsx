@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full  ">
+    <div className="w-full   ">
       <div className="bg-black flex items-center justify-center text-[11px] text-white font-[700] h-[35px]">
         <p>{headerText}</p>
       </div>
